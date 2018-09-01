@@ -43,10 +43,14 @@ a {
 	list-style: none;
 }
 
+.container {
+	width: 1145px;
+	margin:0 auto;
+	padding: 0 27px;			
+}
+
 		/* для хедера */
 .main-navigation {
-	padding-left: 27px;
-	padding-right: 27px;
 	margin-top: 10px;
 	
 	display: flex;
@@ -82,8 +86,6 @@ a {
 	font-weight: bold;
 	line-height: 18px;
 
-}
-.site-navigation {
 	width: 425px;
 	margin-left: 13px;
 
@@ -94,8 +96,6 @@ a {
 
 	padding-left: 12px;
 }
-
-
 
 .user-item a{
 	display: block;
@@ -144,7 +144,7 @@ width: 115px;
 	flex-direction: column;
 	align-items: flex-end;
 	margin: 0;
-	margin-right: 25px;
+	/*margin-right: 25px;*/
 }
 .work-time{
 	font-size: 14px;
@@ -157,4 +157,107 @@ width: 115px;
 	font-weight: bold;
 	line-height: 24px;	
 
+}
+
+	/*для слайдера*/
+.slider {
+	position: static;
+	margin-bottom: 430px;
+}
+
+.slide-1 {
+	position: absolute;
+	z-index: -100;
+	top: 0;
+	left: 77px;
+
+}
+
+	/* для main*/
+
+.promo {
+	height: 230px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-bottom: 40px;
+}
+.promo-raspberry{
+	width: 560px;
+	background-image: url(F:/IT/my_works/gllacy_shop/img/raspberry.jpg);
+	background-position: -50px -90px;
+	border-radius: 15px;
+}
+.promo-chocolate{
+	width: 560px;
+	background-image: url(F:/IT/my_works/gllacy_shop/img/chocolate.jpg);
+	margin-left: 25px;
+	border-radius: 15px;
+}	
+
+.catalog{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	margin-bottom: 40px;
+}
+.catalog-item{
+	margin-left: 25px;
+}
+.catalog-item:first-of-type {
+	margin-left: 0;
+}
+.catalog-item img {
+	border-radius: 50%;
+}
+
+/*инфо про магазин "вафля"*/
+.about_shop {
+	background-image: url(F:/IT/my_works/gllacy_shop/img/waffle.jpg);
+	height: 310px;
+	width: auto;
+	margin-bottom: 40px;
+}
+
+
+/* новости и подписка*/
+.news {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-bottom: 40px;
+}
+.news-item {
+	height: 220px;
+	width: 560px;
+	background-image: url(F:/it/my_works/gllacy_shop/img/Strawberry_background.jpg);
+	background-position: -50px -225px;
+	border-radius: 15px;
+}	
+.subscribe-info {
+	height: 220px;
+	width: 560px;
+	background-image: url(F:/it/my_works/gllacy_shop/img/bg-post.svg);
+	margin-left: 25px;
+	border-radius: 15px;
+}
+/* карта и адрес*/
+.address{
+
+}
+.address-item {
+	border-radius: 15px;
+	width: 305px;
+	height: 300px;
+	background-color: #fefefe;
+	margin-left: auto;
+
+	color: #323232;
 }

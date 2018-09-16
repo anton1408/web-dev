@@ -18,6 +18,8 @@
 
 body {
 	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 0;
 	width: 1200px;
 	
@@ -39,7 +41,8 @@ a {
 
 .site-navigation,
 .user-navigation,
-.work-info {
+.work-info,
+.footer-company-info li {
 	list-style: none;
 }
 
@@ -48,40 +51,52 @@ a {
 	margin:0 auto;
 	padding: 0 27px;			
 }
+.btn {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 24px;
+
+	border: 0px;
+	border-radius: 20px;
+	color: #fefefe;
+	padding: 10px 20px;
+    background-image: -webkit-linear-gradient(left, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: -o-linear-gradient(left, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: linear-gradient(to right, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+	opacity: 0.988;
+	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+}
+
+}
 
 		/* для хедера */
+.main-header {
+	
+}
 .main-navigation {
-	margin-top: 10px;
+	margin-top: 8px;
 	
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+}
+.site-navigation,
+.user-navigation {
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 .main-header-logo {
   width: 154px;
   height: 64px;
 }
 .main-navigation-wrapper {
-
 	width: 100%;
 	height: 100%;	
 }
 .main-navigation-wrapper .container {
   display: flex;
 }
- 
-
-.site-navigation,
-.user-navigation {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  
-}
 .site-navigation {
-	
-
 	font-size: 16px;
 	font-weight: bold;
 	line-height: 18px;
@@ -93,14 +108,10 @@ a {
 }
 .navigation-item a {
 	display: block;
-
-	padding-left: 12px;
+	padding-left: 10px;
+	padding-right: 17px;
 }
 
-.user-item a{
-	display: block;
-}
-	
 .user-navigation {
 	margin-left: auto;
 	align-items: center;
@@ -109,34 +120,60 @@ a {
 	font-size: 14px;
 	font-weight: medium;
 	line-height: 16px;	
-
+	justify-content: flex-end;
 }
-.user-item {
+.user-navigation {
+	position: relative;
+	top:-1px;
+}
+.user-navigation-item a{
+	display: block;
 	background-color: #fff;
 	border-radius: 20px;
 	background-color: rgba(255, 255, 255, 0.2);
+	height: 32px;
 }
-.search-btn {
-	width: 30px;
-	height: 20px;
+.basket-btn a {
+	width: 117px;
+	margin-left: 5px;
+}
+.basket-btn img {
+	position: relative;
+	top: 6px;
+	left: 16px;
+}
+.basket-btn span {
+	position: relative;
+	left: 23px;
+}
+.login-btn a{
+	width: 93px;
+	text-align: center;
+	height: 32px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+.login-btn img{
+	position: relative;
+	top:6px;
+	right: 2px;
+}
+.login-btn span{
+	position: relative;
+	top: 1px;
+	left: 4px;
+}
+.search-btn a{
+	width: 32px;
+	height: 32px;
 	border-radius: 50px;
 	text-align: center;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	margin-right: 5px;
 }
-.login-btn {
-	width: 90px;
-	text-align: center;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-left: 10px;
-}
-.basket-btn {
-text-align: center;
-padding-top: 4px;
-padding-bottom: 4px;
-
-width: 115px;
+.search-btn img{
+	position: relative;
+	top: 7px;
+	left: 1px;
 }
 
 .work-info {
@@ -144,7 +181,7 @@ width: 115px;
 	flex-direction: column;
 	align-items: flex-end;
 	margin: 0;
-	/*margin-right: 25px;*/
+	margin-right: 27px;
 }
 .work-time{
 	font-size: 14px;
@@ -162,16 +199,66 @@ width: 115px;
 	/*для слайдера*/
 .slider {
 	position: static;
-	margin-bottom: 430px;
+	margin-bottom: 202px;
 }
 
 .slide-1 {
 	position: absolute;
 	z-index: -100;
 	top: 0;
-	left: 77px;
-
+	left: 110px;
 }
+.slide-2 {
+	position: absolute;
+	z-index: -100;
+	top: 0;
+	left: 110px;
+}
+.slide-3 {
+	position: absolute;
+	z-index: -100;
+	top: 0;
+	left: 110px;
+}
+.slider p {
+	font-size: 60px;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	line-height: 1.006;
+	text-align: center;
+
+	position: relative;
+	top: 215px;
+	right: 0.5px;
+}
+.slider-buy-btm{
+	font-size: 32px;
+	font-weight: bold;
+ 	line-height: 44px;
+
+ 	border-radius: 31px;
+ 	padding-left: 40px;
+ 	padding-right: 41px;
+
+
+
+ 	position: relative;
+  	top: 161px;
+  	left: 434px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	/* для main*/
 
@@ -250,7 +337,8 @@ width: 115px;
 }
 /* карта и адрес*/
 .address{
-
+margin-bottom: 40px;
+height: 430px;
 }
 .address-item {
 	border-radius: 15px;
@@ -258,6 +346,44 @@ width: 115px;
 	height: 300px;
 	background-color: #fefefe;
 	margin-left: auto;
-
+	margin-right: 27px;
+	position: relative;
+	top: 27px;
 	color: #323232;
+}
+.address img {
+	position: absolute;
+}
+
+/*футер*/
+.footer-wrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	padding-left: 27px;
+	padding-right: 27px;
+}
+.footer-socials {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.footer-company-info {
+	margin-left: 185px;
+	background-color: black;
+	
+}
+.footer-company-info li {
+	list-style: none;
+}
+
+.footer-copyright {
+	margin-left: auto;
+	background-color: black;
 }

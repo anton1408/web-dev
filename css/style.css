@@ -273,13 +273,13 @@ a {
 }
 .promo-raspberry{
 	width: 560px;
-	background-image: url(F:/IT/my_works/gllacy_shop/img/raspberry.jpg);
+	background-image: url(../img/raspberry.jpg);
 	background-position: -50px -90px;
 	border-radius: 15px;
 }
 .promo-chocolate{
 	width: 560px;
-	background-image: url(F:/IT/my_works/gllacy_shop/img/chocolate.jpg);
+	background-image: url(../img/chocolate.jpg);
 	margin-left: 25px;
 	border-radius: 15px;
 }	
@@ -305,7 +305,7 @@ a {
 
 /*инфо про магазин "вафля"*/
 .about_shop {
-	background-image: url(F:/IT/my_works/gllacy_shop/img/waffle.jpg);
+	background-image: url(../img/waffle.jpg);
 	height: 310px;
 	width: auto;
 	margin-bottom: 40px;
@@ -324,14 +324,14 @@ a {
 .news-item {
 	height: 220px;
 	width: 560px;
-	background-image: url(F:/it/my_works/gllacy_shop/img/Strawberry_background.jpg);
+	background-image: url(../img/Strawberry_background.jpg);
 	background-position: -50px -225px;
 	border-radius: 15px;
 }	
 .subscribe-info {
 	height: 220px;
 	width: 560px;
-	background-image: url(F:/it/my_works/gllacy_shop/img/bg-post.svg);
+	background-image: url(../img/bg-post.svg);
 	margin-left: 25px;
 	border-radius: 15px;
 }

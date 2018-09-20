@@ -246,21 +246,7 @@ a {
   	top: 161px;
   	left: 434px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	/* для main*/
+	/* для promo*/
 
 .promo {
 	height: 230px;
@@ -271,19 +257,54 @@ a {
 	display: flex;
 	margin-bottom: 40px;
 }
+
+.promo-item,
+.promo-item-description {
+	margin: 0;
+	padding: 0;
+	padding-left: 18px;
+	padding-right: 20px;
+	margin-top: 16px;
+}
+.promo-item {
+  	font-size: 35px;
+  	font-weight: bold;
+	line-height: 41px;
+	letter-spacing: 2px;
+}
+.promo-item-description {
+	font-size: 18px;
+	font-weight: bold;
+ 	line-height: 22px;
+ 	padding-bottom: 43px;
+
+}
 .promo-raspberry{
 	width: 560px;
+	height: 230px;
+	
+
 	background-image: url(../img/raspberry.jpg);
-	background-position: -50px -90px;
+	background-position: -50px -95px;
 	border-radius: 15px;
 }
 .promo-chocolate{
 	width: 560px;
+	height: 230px;
+
 	background-image: url(../img/chocolate.jpg);
 	margin-left: 25px;
+	background-position: -50px -95px;
 	border-radius: 15px;
-}	
+}
+.promo-btn {
+	display: block;
+	margin-left: auto;
+	margin-right: 22px;
+}
 
+
+/*каталог*/
 .catalog{
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -291,7 +312,7 @@ a {
 	display: -o-flex;
 	display: flex;
 
-	margin-bottom: 40px;
+	margin-bottom: 38px;
 }
 .catalog-item{
 	margin-left: 25px;
@@ -301,14 +322,51 @@ a {
 }
 .catalog-item img {
 	border-radius: 50%;
+	position: static;
+	z-index: 1;
 }
+.price-item {
+	font-size: 35px;
+	font-weight: bold;
+ 	line-height: 45px;
+
+	display: block;
+	position: absolute;
+	z-index: 10;
+	top: 1090px;
+}
+.price-numbers {
+	font-size: 45px;
+	font-weight: bold;
+ 	line-height: 45px;
+ }
+ .ice-description {
+ 	font-size: 16px;
+	font-weight: normal;
+ 	line-height: 22px;
+ 	text-align: center;
+
+ 	margin: 0;
+ 	padding: 0;
+	padding-top: 9px;
+
+ }
+
 
 /*инфо про магазин "вафля"*/
-.about_shop {
+.about-shop {
 	background-image: url(../img/waffle.jpg);
 	height: 310px;
 	width: auto;
 	margin-bottom: 40px;
+	border-radius: 15px;
+}
+.about-shop h3 {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 30px;
+  padding-left: 20px;
+  padding-top: 25px;
 }
 
 

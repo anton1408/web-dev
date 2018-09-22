@@ -53,16 +53,16 @@ a {
 }
 .btn {
 	font-size: 18px;
-	font-weight: bold;
+	font-weight: 700;
 	line-height: 24px;
 
 	border: 0px;
 	border-radius: 20px;
 	color: #fefefe;
 	padding: 10px 20px;
-    background-image: -webkit-linear-gradient(left, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-    background-image: -o-linear-gradient(left, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-    background-image: linear-gradient(to right, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: -webkit-linear-gradient(top, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: -o-linear-gradient(top, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: linear-gradient(to top, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
 	opacity: 0.988;
 	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
@@ -233,10 +233,12 @@ a {
 }
 .slider-buy-btm{
 	font-size: 32px;
-	font-weight: bold;
+	font-weight: 700;
  	line-height: 44px;
 
  	border-radius: 31px;
+ 	padding-top: 8px;
+ 	padding-bottom: 11px;
  	padding-left: 40px;
  	padding-right: 41px;
 
@@ -300,9 +302,16 @@ a {
 .promo-btn {
 	display: block;
 	margin-left: auto;
-	margin-right: 22px;
+	margin-right: 21px;
+	padding: 10px 22px 10px 20px;
 }
-
+.promo-raspberry button{
+	margin: 0;
+	margin-left: auto;
+	margin-right: 21px;
+	padding: 10px 23px 12px 23px;
+	border-radius: 25px;
+}
 
 /*каталог*/
 .catalog{
@@ -356,19 +365,41 @@ a {
 /*инфо про магазин "вафля"*/
 .about-shop {
 	background-image: url(../img/waffle.jpg);
-	height: 310px;
+	height: 306px;
 	width: auto;
+
 	margin-bottom: 40px;
 	border-radius: 15px;
 
 	color: black;
 }
 .about-shop h3 {
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 30px;
-  padding-left: 20px;
-  padding-top: 25px;
+ 	font-size: 24px;
+ 	font-weight: 500;
+ 	line-height: 30px;
+ 	padding-left: 20px;
+ 	padding-top: 25px;
+}
+.about-shop-wrapper{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.about-shop p {
+	font-size: 16px;
+ 	font-weight: 400;
+ 	line-height: 22px;
+
+	padding: 0;
+	margin: -5px;
+ 	padding-left: 80px;
+ 	padding-right: 25px;
+ 	padding-bottom: 32px;
+ 	width: 477px;
 }
 
 
@@ -380,6 +411,7 @@ a {
 	display: -o-flex;
 	display: flex;
 	margin-bottom: 40px;
+	margin-left: 27px;
 }
 .news-item {
 	height: 220px;
@@ -387,13 +419,62 @@ a {
 	background-image: url(../img/Strawberry_background.jpg);
 	background-position: -50px -225px;
 	border-radius: 15px;
+	color: black;
 }	
+.news-item h3 {
+	margin: 0;
+	padding: 0;
+}
+.news-item a {
+	margin: 0;
+	padding: 0;
+}
+
 .subscribe-info {
 	height: 220px;
 	width: 560px;
 	background-image: url(../img/bg-post.svg);
 	margin-left: 25px;
 	border-radius: 15px;
+}
+.subscribe-info-wrapper p {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 35px;
+}
+.subscribe-info-wrapper {
+	background-color: #f8f7f4;
+	width: 515px;
+	height: 180px;
+	margin: 5px;
+	padding-left: 25px;
+	padding-right: 10px;
+	padding-top: 30px;
+	border-radius: 15px;
+
+	font-size: 16px;
+ 	font-weight: 400;
+ 	line-height: 22px;
+	color: #5a5a5a;
+}
+.subscribe-btn {
+	display: block;
+	margin-left: auto;
+	display: inline-block;
+	margin-left: 7px;
+	height: 45px;
+	padding-left: 15px;
+	padding-right: 20px;
+	border-radius: 25px;
+}
+.subscribe-info input {
+	width: 355px;
+	height: 40px;
+	display: inline-block;
+	margin-right:0;
+	border-radius: 5px;
+	border: 1px solid #d3d3d2;
+	padding-left: 10px;
 }
 /* карта и адрес*/
 .address{

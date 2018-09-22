@@ -430,7 +430,7 @@ a {
 	padding: 0;
 	padding-top: 25px;
 	padding-left: 20px;
-	padding-bottom: 2px;
+	padding-bottom: 3px;
 }
 .news-item a {
     color: #323232;
@@ -494,20 +494,54 @@ a {
 }
 /* карта и адрес*/
 .address{
-margin-bottom: 40px;
+margin-bottom: 20px;
 height: 430px;
 }
 .address-item {
+    color: #323232;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+
 	border-radius: 15px;
-	width: 305px;
-	height: 300px;
+	width: 302px;
+	height: 305px;
 	background-color: #fefefe;
 	margin-left: auto;
 	margin-right: 27px;
 	position: relative;
-	top: 27px;
+	top: 62px;
 	color: #323232;
 }
+.address-item strong{
+    color: #323232;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+}
+.address-item p {
+	padding: 0;
+	margin: 0;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 28px;
+	margin-bottom: 21px;
+}
+.address-item span {
+	display: inline-block;
+	padding-top: 16px;
+	line-height: 1.9;
+}
+.address-item button {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding-left: 27px;
+	padding-right: 28px;
+	border-radius: 25px;
+}
+
+
 .address img {
 	position: absolute;
 }
@@ -520,8 +554,8 @@ height: 430px;
 	display: -o-flex;
 	display: flex;
 
-	padding-left: 27px;
-	padding-right: 27px;
+	padding-left: 16px;
+	padding-right: 20px;
 }
 .footer-socials {
 	display: -webkit-flex;
@@ -530,10 +564,17 @@ height: 430px;
 	display: -o-flex;
 	display: flex;
 }
+.footer-socials img {
+	border-radius: 50%;
+	border: 2px #c2cec7 solid;
+
+	padding: 0;
+	margin-left: 13px;
+
+}
 
 .footer-company-info {
 	margin-left: 185px;
-	background-color: black;
 	
 }
 .footer-company-info li {
@@ -542,5 +583,5 @@ height: 430px;
 
 .footer-copyright {
 	margin-left: auto;
-	background-color: black;
+
 }

@@ -547,6 +547,9 @@ height: 430px;
 }
 
 /*футер*/
+footer {
+	padding-bottom: 30px;
+}
 .footer-wrapper {
 	display: -webkit-flex;
 	display: -moz-flex;

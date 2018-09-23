@@ -410,7 +410,7 @@ a {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	margin-bottom: 40px;
+	margin-bottom: 42px;
 	margin-left: 27px;
 }
 .news-item {
@@ -494,7 +494,7 @@ a {
 }
 /* карта и адрес*/
 .address{
-margin-bottom: 20px;
+margin-bottom: 35px;
 height: 430px;
 }
 .address-item {
@@ -563,6 +563,8 @@ height: 430px;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+
+	width: 190px;
 }
 .footer-socials img {
 	border-radius: 50%;
@@ -574,14 +576,37 @@ height: 430px;
 }
 
 .footer-company-info {
-	margin-left: 185px;
-	
+	margin-left: 245px;
 }
-.footer-company-info li {
-	list-style: none;
+.footer-company-info ul {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+
+	width: 330px;
+	margin: 0;
+	padding: 0;
 }
 
+.footer-company-info li {
+	list-style: none;
+	width: 50%;
+
+	font-size: 13px;
+  	font-weight: 400;
+	line-height: 18px;
+}
 .footer-copyright {
 	margin-left: auto;
 
+	font-size: 12px;
+  	font-weight: 300;
+	line-height: 18px;
+}
+.footer-copyright p {
+	margin: 0;
+	padding: 0;
 }

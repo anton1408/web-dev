@@ -14,8 +14,6 @@
 	overflow: hidden;
 }
 
-
-
 body {
 	margin: 0;
 	margin-left: auto;
@@ -453,7 +451,7 @@ a {
 	height: 220px;
 	width: 560px;
 	background-image: url(../img/Strawberry_background.jpg);
-	background-position: -50px -225px;
+	background-position: -52px -223px;
 	border-radius: 15px;
 }	
 .news-item h3 {

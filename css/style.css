@@ -74,6 +74,42 @@ a {
     background-image: -o-linear-gradient(bottom, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
     background-image: linear-gradient(to bottom, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
 }
+/*модальные окна и тд*/
+.catalog-mune {
+	display: none;
+	width: 143px;
+	height: 171px;
+	border-radius: 5px;
+	background-color: #f8f7f4;
+	position: absolute;
+	top: 60px;
+	left: 220px;
+
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+	color: #323232;
+
+}
+.catalog-mune ul {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.catalog-mune li:first-child {
+	font-weight: 700;
+	border-bottom: 1px solid #323232;
+	margin-left: 7px;
+	margin-right: 7px;
+}
+.catalog-mune li {
+	list-style: none;
+	height: 30px;
+	padding-top: 3px;
+
+	display: block;
+}
 
 		/* для хедера */
 .main-header {
@@ -398,7 +434,7 @@ a {
 
 /*инфо про магазин "вафля"*/
 .about-shop {
-	background-image: url(../img/waffle.jpg);
+	background: url("../img/Мороженко.svg") 20px 94px no-repeat, url("../img/Листик.svg") 20px 182px no-repeat, url("../img/Корова.svg") 593px 94px no-repeat, url("../img/Градусник.svg") 593px 182px no-repeat, url("../img/waffle.jpg");
 	height: 306px;
 	width: auto;
 
@@ -413,6 +449,7 @@ a {
  	line-height: 30px;
  	padding-left: 20px;
  	padding-top: 25px;
+ 	padding-bottom: 2px;
 }
 .about-shop-wrapper{
 	display: -webkit-flex;
@@ -436,7 +473,6 @@ a {
  	width: 477px;
 }
 
-
 /* новости и подписка*/
 .news {
 	display: -webkit-flex;
@@ -450,7 +486,7 @@ a {
 .news-item {
 	height: 220px;
 	width: 560px;
-	background-image: url(../img/Strawberry_background.jpg);
+	background-image: url("../img/Strawberry_background.jpg");
 	background-position: -52px -223px;
 	border-radius: 15px;
 }	

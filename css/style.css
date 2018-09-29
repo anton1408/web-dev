@@ -268,7 +268,7 @@ a {
 	/*для слайдера*/
 .slider {
 	position: static;
-	margin-bottom: 202px;
+	margin-bottom: 203px;
 }
 
 .slide-1 {
@@ -326,7 +326,7 @@ a {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	margin-bottom: 40px;
+	margin-bottom: 33px;
 }
 
 .promo-item,
@@ -341,7 +341,6 @@ a {
   	font-size: 35px;
   	font-weight: bold;
 	line-height: 41px;
-	letter-spacing: 2px;
 }
 .promo-item-description {
 	font-size: 18px;
@@ -390,19 +389,26 @@ a {
 	display: -o-flex;
 	display: flex;
 
-	margin-bottom: 38px;
+	margin-bottom: -61px;
+	margin-left: -13px;
 }
 .catalog-item{
-	margin-left: 25px;
-}
-.catalog-item:first-of-type {
-	margin-left: 0;
+	margin-right: 2px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 6px;
+	height: 399px;
+
 }
 .catalog-item img {
 	border-radius: 50%;
-	position: static;
-	z-index: 1;
 }
+.catalog-item img:first-of-type {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+}
+
 .price-item {
 	font-size: 35px;
 	font-weight: bold;
@@ -423,14 +429,30 @@ a {
 	font-weight: 500;
  	line-height: 22px;
  	text-align: center;
-
-/* 	border-bottom: 1px solid #adbdb4;
-	display: inline;*/
 	
  	margin: 0;
  	padding: 0;
 	padding-top: 9px;
+	padding-bottom: 10px;
  }
+.catalog-btn {
+	margin-left: auto;
+	margin-right: auto;
+	display: none;
+}
+.catalog-item:hover {
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+.catalog-item:hover .catalog-btn {
+	display: block;
+
+}
+
+
+
+
 
 /*инфо про магазин "вафля"*/
 .about-shop {
@@ -480,7 +502,7 @@ a {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	margin-bottom: 42px;
+	margin-bottom: 40px;
 	margin-left: 27px;
 }
 .news-item {
@@ -707,3 +729,12 @@ footer {
 .footer-copyright a:active {
 	color: #ffbc9e;
 }
+
+
+
+
+
+
+
+
+

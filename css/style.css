@@ -144,6 +144,7 @@ margin-bottom: -10px;
 	height: 171px;
 	border-radius: 5px;
 	background-color: #fff;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 	position: absolute;
 	top: 40px;
 

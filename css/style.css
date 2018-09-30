@@ -89,15 +89,15 @@ a {
   display: flex;
 }
 .main-header-logo {
-  width: 154px;
-  height: 64px;
+	width: 154px;
+	height: 64px;
 }
 .main-navigation-wrapper {
 	width: 100%;
 	height: 100%;	
 }
 .main-navigation-wrapper .container {
-  display: flex;
+	display: flex;
 }
 .site-navigation {
 	font-size: 16px;
@@ -130,9 +130,9 @@ a {
 	color: #333333;
 	text-decoration: none;
 }
-.site-navigation > li {
-padding-bottom: 10px;
-margin-bottom: -10px;
+.site-navigation > li:first-child {
+	padding-bottom: 10px;
+	margin-bottom: -10px;
 }
 .navigation-item:hover > .catalog-mune {
 	display: block;
@@ -207,6 +207,10 @@ margin-bottom: -10px;
 	position: relative;
 	top:-1px;
 }
+.user-navigation-item {
+	padding-bottom: 10px;
+	margin-bottom: -10px;
+}
 .user-navigation-item a{
 	display: block;
 	border-radius: 20px;
@@ -214,7 +218,8 @@ margin-bottom: -10px;
 	height: 32px;
 	color: #fff;
 }
-.user-navigation-item a:hover{
+.user-navigation-item a:hover,
+.user-navigation-item:hover > a {
 	background-color: #f8f7f4;
 	color: #323232;
 }
@@ -226,7 +231,8 @@ margin-bottom: -10px;
     background-repeat: no-repeat;
     background-position: 16px 6px;
 }
-.basket-btn a:hover {
+.basket-btn a:hover,
+.basket-btn:hover > a {
 	background-image: url(../img/basket1.svg);
     background-repeat: no-repeat;
     background-position: 16px 6px;
@@ -253,11 +259,13 @@ margin-bottom: -10px;
     background-repeat: no-repeat;
     background-position: 17px 6px;
 }
-.login-btn a:hover {
+.login-btn a:hover,
+.login-btn:hover > a  {
 	background-image: url(../img/entrance.svg);
     background-repeat: no-repeat;
     background-position: 17px 6px;
 }
+
 
 .search-btn a{
 	width: 32px;
@@ -271,7 +279,8 @@ margin-bottom: -10px;
     background-repeat: no-repeat;
     background-position: 8px 7px;
 }
-.search-btn a:hover {
+.search-btn a:hover,
+.search-btn:hover > a {
 	background-image: url(../img/loupe1.svg);
     background-repeat: no-repeat;
     background-position: 8px 7px;
@@ -303,19 +312,19 @@ margin-bottom: -10px;
 
 .slide-1 {
 	position: absolute;
-	z-index: -100;
+	z-index: -10;
 	top: 0;
 	left: 110px;
 }
 .slide-2 {
 	position: absolute;
-	z-index: -100;
+	z-index: -10;
 	top: 0;
 	left: 110px;
 }
 .slide-3 {
 	position: absolute;
-	z-index: -100;
+	z-index: -10;
 	top: 0;
 	left: 110px;
 }
@@ -567,9 +576,7 @@ margin-bottom: -10px;
 	display: block;
 	width: 300px;
 }
-.news-item a:hover,
-.news-item a:active,
-.news-item a:focus {
+.news-item a:hover {
 color: #e84d37;
 text-decoration: none;
 }
@@ -766,5 +773,114 @@ footer {
 
 
 
+/*модалки*/
+.modal-overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	background: black;
+	opacity: 0.5;
+	z-index: 20;
+}
 
 
+
+
+.modal-login {
+	display: none;
+	width: 277px;
+	height: 214px;
+	border-radius: 5px;
+	position: fixed;
+	top: 60px;
+	left: 801px;
+
+	background-color: #f8f7f4;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+.modal-login p 	{
+	margin: 0;
+	padding: 0;
+}
+.modal-login input {
+	margin: 0;
+	padding: 0;
+	height: 40px;
+	width: 228px;
+	margin-top: 20px;
+	margin-left: 20px;
+	padding-left: 10px;
+	border-radius: 5px;
+	border: 1px solid #d3d3d2;
+
+	font-family: "Roboto", Arial, sans-serif;
+	color: #999999;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	/*нужно найти селектор для стилизации placeholder*/
+
+}
+.login-wrapper {
+	margin-top: 20px;
+}
+.modal-login .btn {
+	margin-left: 21px;
+	float: left;
+	padding-left: 23px;
+	padding-right: 23px;
+	border-radius: 19px;
+}
+.login-wrapper p {
+	margin-top: -1px;
+	margin-left: 22px;	
+	display: inline-block;
+}
+.login-wrapper > p > a {
+	color: black;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 24px;
+	text-decoration: underline;
+	display: inline;
+	line-height: 1.6;
+}
+.modal-login a:hover {
+	color: #e84d37;
+	text-decoration: none;
+}
+
+.modal-search {
+	display: none;
+	width: 341px;
+	height: 84px;
+	border-radius: 5px;
+	position: fixed;
+	top: 60px;
+	left: 635px;
+
+	background-color: #f8f7f4;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+.modal-search input {
+	margin: 0;
+	padding: 0;
+	height: 40px;
+	width: 298px;
+	margin-top: 20px;
+	margin-left: 15px;
+	padding-left: 12px;
+	border-radius: 5px;
+	border: 1px solid #d3d3d2;
+
+	font-family: "Roboto", Arial, sans-serif;
+	color: red;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	/*нужно найти селектор для стилизации placeholder*/
+}

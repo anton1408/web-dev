@@ -45,7 +45,7 @@
 						</li>
 					</ul>
 					<ul class="user-navigation">
-						<li class="search-btn user-navigation-item"><a href="#"></a>
+						<li class="search-btn user-navigation-item"><a href="#"></a></li>
 						<li class="login-btn user-navigation-item"><a href="#"><span>Вход</span></a></li>
 						<li class="basket-btn user-navigation-item"><a href="#"><span>Пусто</span></a></li>
 					</ul>
@@ -219,18 +219,35 @@
 		</div>
 	</footer>
 
+	<section class="modal modal-login">
+		<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+			<p>
+				<input class="login-icon-user" type="text" name="login" placeholder="Электронная почта">
+			</p>
+			<p>
+				<input type="text" class="login-icon-user" name="password" placeholder="Пароль">
+			</p>
+			<div class="login-wrapper">
+				<button class="btn" type="submit">Войти</button>
+				<p>
+					<a class="restore" href="#">Забыли пароль?</a><br>
+					<a class="registration" href="#">Новая регистрация</a>
+				</p>
+			</div>
+		</form>
+	</section>
+	<section class="modal-search">
+		<form action="https://echo.htmlacademy.ru" class="search-form" method="post">
+			<input class="search-icon-user" type="text" name="search" placeholder="Что ищем?">
+		</form>
+	</section>
 
 
 
 
 
 
-
-
-
-
-
-
+<div class="modal-overlay"></div>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

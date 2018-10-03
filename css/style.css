@@ -786,10 +786,6 @@ footer {
 	opacity: 0.5;
 	z-index: 20;
 }
-
-
-
-
 .modal-login {
 	display: none;
 	width: 277px;
@@ -798,6 +794,8 @@ footer {
 	position: fixed;
 	top: 60px;
 	left: 801px;
+	z-index: 30;
+
 
 	background-color: #f8f7f4;
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
@@ -862,6 +860,7 @@ footer {
 	position: fixed;
 	top: 60px;
 	left: 635px;
+	z-index: 30;
 
 	background-color: #f8f7f4;
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
@@ -878,9 +877,12 @@ footer {
 	border: 1px solid #d3d3d2;
 
 	font-family: "Roboto", Arial, sans-serif;
-	color: red;
+	color: #999999;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 24px;
 	/*нужно найти селектор для стилизации placeholder*/
+}
+.modal-show {
+	display: block;
 }

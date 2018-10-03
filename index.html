@@ -46,7 +46,7 @@
 					</ul>
 					<ul class="user-navigation">
 						<li class="search-btn user-navigation-item"><a href="#"></a></li>
-						<li class="login-btn user-navigation-item"><a href="#"><span>Вход</span></a></li>
+						<li class="login-btn user-navigation-item"><a href="https://htmlacademy.ru/courses/javascript"><span>Вход</span></a></li>
 						<li class="basket-btn user-navigation-item"><a href="#"><span>Пусто</span></a></li>
 					</ul>
 				</div>
@@ -248,7 +248,43 @@
 
 
 <div class="modal-overlay"></div>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<script>
+	var userLoginLink = document.querySelector(".login-btn");
+	var userLoginModal = document.querySelector(".modal-login");
+	var loginFocus = userLoginModal.querySelector("[name=login]")
+
+	var userSearchLink = document.querySelector(".search-btn");
+	var userSearchModal = document.querySelector(".modal-search");
+	var searchFocus = userSearchModal.querySelector("[name=search]")
+
+
+	var modalOverlay = document.querySelector(".modal-overlay");
+
+
+	userLoginLink.addEventListener("click", function (evt) {
+		evt.preventDefault();
+		userLoginModal.classList.add("modal-show");
+		modalOverlay.classList.add("modal-show");
+		loginFocus.focus();
+	});
+	modalOverlay.addEventListener("click", function (evt) {
+		modalOverlay.classList.remove("modal-show");
+		userLoginModal.classList.remove("modal-show");
+	});
+
+	userSearchLink.addEventListener("click", function (evt) {
+		evt.preventDefault();
+		userSearchModal.classList.add("modal-show");
+		modalOverlay.classList.add("modal-show");
+		searchFocus.focus();
+	});
+	modalOverlay.addEventListener("click", function (evt) {
+		modalOverlay.classList.remove("modal-show");
+		userSearchModal.classList.remove("modal-show");
+	});
+
+	
+</script>
 </body>
 </html>
 

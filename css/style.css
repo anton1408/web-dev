@@ -884,6 +884,119 @@ footer {
 	line-height: 24px;
 	/*нужно найти селектор для стилизации placeholder*/
 }
+.modal-feedBack {
+	display: none;
+	position: fixed;
+	z-index: 30;
+	top: 20%;
+	left: 30%;
+
+
+	width: 480px;
+	height: 440px;
+	border-radius: 5px;
+	background-color: #f8f7f4;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+.modal-feedBack h2 {
+	margin: 0;
+	padding: 0;
+	margin-top: 20px;
+	margin-left: 15px;
+color: #323232;
+
+}
+.modal-feedBack input{
+	margin: 0;
+	padding: 0;
+	height: 40px;
+	width: 298px;
+	margin-top: 20px;
+	margin-left: 15px;
+	padding-left: 12px;
+	border-radius: 5px;
+	border: 1px solid #d3d3d2;
+
+	font-family: "Roboto", Arial, sans-serif;
+	color: #999999;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+}
+.modal-feedBack textarea{
+	width: 435px;
+	height: 155px;
+
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-left: 15px;
+	padding-left: 12px;
+	border-radius: 5px;
+	border: 1px solid #d3d3d2;
+
+	resize: none;
+	font-family: "Roboto", Arial, sans-serif;
+	color: #999999;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+}
+.form-feedBack-btn {
+	display: block;
+	margin-left: auto;
+	margin-right: 15px;
+}
+.modal-feedBack textarea {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal-close {
+	position: absolute;
+	z-index: 30;
+	top: 1%;
+	left: 94%;
+	width: 22px;
+	height: 22px;
+	border: 0;
+	background-color: #f8f7f4;
+	
+	font-size: 0;
+
+	cursor: pointer;
+}
+.modal-close::before,
+.modal-close::after {
+	content: "";
+
+	position: absolute;
+	top: 10px;
+	left: 2px;
+
+	width: 19px;
+	height: 3px;
+
+	background-color: #323232;
+}
+.modal-close::before {
+	transform: rotate(45deg);
+}
+.modal-close::after {
+		transform: rotate(-45deg);
+}
+
 .modal-show {
 	display: block;
 }

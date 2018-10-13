@@ -241,7 +241,16 @@
 			<input class="search-icon-user" type="text" name="search" placeholder="Что ищем?">
 		</form>
 	</section>
-
+	<section class="modal modal-feedBack">
+		<h2>Мы обязательно вам ответим!</h2>
+		<button class="modal-close"></button>
+		<form class="feedBack-form" action="https://echo.htmlacademy.ru" method="post">
+			<input type="text" name='name' placeholder="Как вас зовут?">
+			<input type="text" name="@mail" placeholder="Ваша почта для ответа?">
+			<textarea name="comments" placeholder="Напишите что-нибудь..."></textarea>>
+			<button class="form-feedBack-btn btn" type="submit">Отправить</button>
+		</form>
+	</section>
 
 
 
@@ -251,12 +260,16 @@
 <script>
 	var userLoginLink = document.querySelector(".login-btn");
 	var userLoginModal = document.querySelector(".modal-login");
-	var loginFocus = userLoginModal.querySelector("[name=login]")
+	var loginFocus = userLoginModal.querySelector("[name=login]");
 
 	var userSearchLink = document.querySelector(".search-btn");
 	var userSearchModal = document.querySelector(".modal-search");
-	var searchFocus = userSearchModal.querySelector("[name=search]")
+	var searchFocus = userSearchModal.querySelector("[name=search]");
 
+	var userFeedBackLink = document.querySelector(".feedBack-btn");
+	var userFeedBackModal = document.querySelector(".modal-feedBack");
+	var feedBackFocus = document.querySelector("[name=name]");
+	var modalCloseBtn = document.querySelector(".modal-close");
 
 	var modalOverlay = document.querySelector(".modal-overlay");
 
@@ -283,7 +296,19 @@
 		userSearchModal.classList.remove("modal-show");
 	});
 
-	
+	userFeedBackLink.addEventListener("click", function (evt) {
+		userFeedBackModal.classList.add("modal-show");
+		modalOverlay.classList.add("modal-show");
+		feedBackFocus.focus();
+	});
+	modalOverlay.addEventListener("click", function (evt) {
+		modalOverlay.classList.remove("modal-show");
+		userFeedBackModal.classList.remove("modal-show");
+	});
+		modalCloseBtn.addEventListener("click", function (evt) {
+		modalOverlay.classList.remove("modal-show");
+		userFeedBackModal.classList.remove("modal-show");
+	});
 </script>
 </body>
 </html>

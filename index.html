@@ -61,29 +61,33 @@
 
 
 	<main>
-		<div class="container">
 			<h1 class="visually-hidden">Магазин по продаже самого вкусного мороженого собственного производства "Gllacy Shop"</h1>
-			<section class="slider">
-				<div class="slide-1">
-					<img src="img/ice_cream_large_1.png" alt="Крем-брюле и пломбир с малиновым джемом">
+			<div class="wrapper">
+				<input type="radio" name="point" id="slide1" checked>
+				<input type="radio" name="point" id="slide2">
+				<input type="radio" name="point" id="slide3">
+				<div class="slider">
+					<div class="slide-1">
+						<img src="img/ice_cream_large_1.png" alt="Крем-брюле и пломбир с малиновым джемом">
+						<p class="slide-description">Крем-брюле и пломбир</br> с малиновым джемом</p>
+					</div>
+					<div class="slide-2">
+						<img src="img/ice_cream_large_2.png" alt="Шоколадный пломбир и лимонный сорбет ">
+						<p class="slide-description">Шоколадный пломбир<br> и лимонный сорбет </p>
+					</div>
+					<div class="slide-3">
+						<img src="img/ice_cream_large_3.png" alt="Пломбир с помадкой и клубничный щербет">
+						<p class="slide-description">Пломбир с помадкой<br> и клубничный щербет</p>
+					</div>
+				
+					<button class="btn slider-buy-btm">Давайте оба!</button>
 				</div>
-				<p>Крем-брюле и пломбир</br> с малиновым джемом</p>
-				<!-- <div class="slide-2">
-					<img src="img/ice_cream_large_2.png" alt="Шоколадный пломбир и лимонный сорбет ">
+				<div class="controls">
+					<label for="slide1"></label>
+					<label for="slide2"></label>
+					<label for="slide3"></label>
 				</div>
-				<p>Шоколадный пломбир и лимонный сорбет </p>
-				<div class="slide-3">
-					<img src="img/ice_cream_large_3.png" alt="Пломбир с помадкой и клубничный щербет">
-				</div>
-				<p>Пломбир с помадкой и клубничный щербет</p>
-				 -->
-				<div class="slider-btn visually-hidden">
-					<button class="slider-btn">1</button>
-					<button class="slider-btn">2</button>
-					<button class="slider-btn">3</button>
-				</div>
-				<button class="btn slider-buy-btm">Давайте оба!</button>
-			</section>
+			</div>
 
 			<section class="promo">
 				<h2 class="visually-hidden">Промоакции</h2>
@@ -102,7 +106,7 @@
 			<section class="catalog">
 				<h2 class="visually-hidden">Ассортимент мороженого</h2>
 					<div class="catalog-item">
-						<img src="img/hit.svg" alt="">
+						<img class="inHit" src="img/hit.svg" alt="">
 						<img src="img/item-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 						<p class="price-item">
 							<span class="price-numbers">310&#8381;</span>/кг</p>
@@ -111,7 +115,7 @@
 					</div>
 
 				<div class="catalog-item">
-					<img src="img/hit.svg" alt="">
+					<img class="inHit" src="img/hit.svg" alt="">
 					<img src="img/item-2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
 					<p class="price-item">
 						<span class="price-numbers">380&#8381;</span>/кг
@@ -121,17 +125,17 @@
 				</div>
 
 				<div class="catalog-item">
-					<img src="img/hit.svg" alt="">
+					<img class="inHit" src="img/hit.svg" alt="">
 					<img src="img/item-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 					<p class="price-item">
 						<span class="price-numbers">355&#8381;</span>/кг
 					</p>
-					<p class="ice-description">Сливочно-клубничное с присыпкой из белого шоколада</p>
+					<p class="ice-description">Сливочно-клубничное с <br>присыпкой из белого шоколада</p>
 					<button class="btn catalog-btn">Быстрый просмотр</button>
 				</div>
 
 				<div class="catalog-item">
-					<img src="img/hit.svg" alt="">
+					<img class="inHit" src="img/hit.svg" alt="">
 					<img src="img/item-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
 					<p class="price-item">
 						<span class="price-numbers">415&#8381;</span>/кг
@@ -163,8 +167,10 @@
 				<div class="subscribe-info">
 					<div class="subscribe-info-wrapper">
 						<p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-						<input type="email" name="email" placeholder="Электронная почта">
-						<button class="btn subscribe-btn">Отправить</button>
+						<form action="https://echo.htmlacademy.ru" method="post">
+							<input type="email" name="email" placeholder="Электронная почта">
+							<button class="btn subscribe-btn" type="submit">Отправить</button>
+						</form>
 					</div>
 				</div>
 			</section>
@@ -246,7 +252,7 @@
 		<button class="modal-close"></button>
 		<form class="feedBack-form" action="https://echo.htmlacademy.ru" method="post">
 			<input type="text" name='name' placeholder="Как вас зовут?">
-			<input type="text" name="@mail" placeholder="Ваша почта для ответа?">
+			<input type="email" name="@mail" placeholder="Ваша почта для ответа?">
 			<textarea name="comments" placeholder="Напишите что-нибудь..."></textarea>>
 			<button class="form-feedBack-btn btn" type="submit">Отправить</button>
 		</form>

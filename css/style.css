@@ -295,20 +295,23 @@ a {
 }
 .work-time{
 	font-size: 14px;
-	font-weight: bold;
+	font-weight: 400;
 	line-height: 16px;	
 	padding-bottom: 5px;
 }
-.work-tel{
+.work-tel {
 	font-size: 22px;
 	font-weight: bold;
 	line-height: 24px;	
 }
 
 	/*для слайдера*/
+
+
 .slider {
 	position: static;
-	margin-bottom: 227px;
+	margin-bottom: 530px;
+	width: 1200px;
 }
 
 .slide-1 {
@@ -316,29 +319,42 @@ a {
 	z-index: -10;
 	top: 0;
 	left: 110px;
+	display: block;
+	opacity: 0;
 }
-.slide-2 {
-	position: absolute;
-	z-index: -10;
-	top: 0;
-	left: 110px;
-}
-.slide-3 {
-	position: absolute;
-	z-index: -10;
-	top: 0;
-	left: 110px;
-}
-.slider p {
+.slide-description {
+	width: 700px;
 	font-size: 60px;
 	color: rgb(255, 255, 255);
 	font-weight: bold;
 	line-height: 1.006;
 	text-align: center;
 
-	position: relative;
-	top: 215px;
-	right: 0.5px;
+	position: absolute;
+	top: 332px;
+	left: 172px;
+ }
+.slide-2 {
+	position: absolute;
+	z-index: -10;
+	top: 0;
+	left: 90px;
+	display: block;
+	opacity: 0;
+}
+.slide-2>.slide-description {
+	left: 190px;
+}
+.slide-3 {
+	position: absolute;
+	z-index: -10;
+	top: 0;
+	left: 92px;
+	display: block;
+	opacity: 0;
+}
+.slide-3>.slide-description {
+	left: 189px;
 }
 .slider-buy-btm{
 	font-size: 32px;
@@ -351,16 +367,66 @@ a {
  	padding-left: 40px;
  	padding-right: 41px;
 
-
-
- 	position: relative;
-  	top: 185px;
-  	left: 434px;
+ 	position: absolute;
+  	top: 543px;
+  	left: 493px;
 }
+.wrapper > input {
+	display: none;
+}
+.wrapper .controls {
+	left: 5%;
+	position: absolute;
+	top: 563px;
+	left: 60px;
+}
+.wrapper label {
+	cursor: pointer;
+
+	position: relative;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	margin: 0;
+	margin-right: 5px;
+
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	border: 2px solid #fff;
+}
+.wrapper label:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3) {
+	background: #fff;
+}
+#slide1:checked ~ .slider > .slide-1,
+#slide2:checked ~ .slider > .slide-2,
+#slide3:checked ~ .slider > .slide-3 {
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
 	/* для promo*/
 
 .promo {
 	height: 230px;
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -391,8 +457,9 @@ a {
 }
 .promo-raspberry{
 	width: 560px;
-	height: 230px;
-	
+	height: 229px;
+	margin: 0;
+	margin-left: 27px;
 
 	background-image: url(../img/raspberry.jpg);
 	background-position: -50px -95px;
@@ -400,10 +467,10 @@ a {
 }
 .promo-chocolate{
 	width: 560px;
-	height: 230px;
+	height: 229px;
 
 	background-image: url(../img/chocolate.jpg);
-	margin-left: 25px;
+	margin-left: 26px;
 	background-position: -50px -95px;
 	border-radius: 15px;
 }
@@ -417,7 +484,7 @@ a {
 	margin: 0;
 	margin-left: auto;
 	margin-right: 21px;
-	padding: 10px 23px 12px 23px;
+	padding: 10px 23px 12px 22px;
 	border-radius: 25px;
 }
 
@@ -429,26 +496,31 @@ a {
 	display: -o-flex;
 	display: flex;
 
+	width: 1200px;
+
 	margin-bottom: -61px;
-	margin-left: -13px;
 }
-.catalog-item{
-	margin-right: 2px;
-	padding-left: 12px;
-	padding-right: 12px;
+.catalog-item {
+	padding-left: 13px;
+	padding-right: 13px;
 	padding-top: 6px;
 	height: 399px;
-
+	width: 269px;
+	margin-left: 15px;
 }
+.catalog-item:nth-child(3) {
+	margin-left: -2px;
+}
+.catalog-item:nth-child(4) {
+	margin-left: -2px;
+}
+.catalog-item:nth-child(5) {
+	margin-left: -2px;
+}
+
 .catalog-item img {
 	border-radius: 50%;
 }
-.catalog-item img:first-of-type {
-	position: absolute;
-	margin: 0;
-	padding: 0;
-}
-
 .price-item {
 	font-size: 35px;
 	font-weight: bold;
@@ -489,17 +561,19 @@ a {
 	display: block;
 
 }
-
-
-
+.inHit {
+	position: absolute;
+}
 
 
 /*инфо про магазин "вафля"*/
 .about-shop {
 	background: url("../img/Мороженко.svg") 20px 94px no-repeat, url("../img/Листик.svg") 20px 182px no-repeat, url("../img/Корова.svg") 593px 94px no-repeat, url("../img/Градусник.svg") 593px 182px no-repeat, url("../img/waffle.jpg");
 	height: 306px;
-	width: auto;
+	width: 1146px;
 
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 40px;
 	border-radius: 15px;
 
@@ -948,21 +1022,6 @@ color: #323232;
 }
 .modal-feedBack textarea {
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .modal-close {
 	position: absolute;
 	z-index: 30;
@@ -972,7 +1031,7 @@ color: #323232;
 	height: 22px;
 	border: 0;
 	background-color: #f8f7f4;
-	
+
 	font-size: 0;
 
 	cursor: pointer;
@@ -996,6 +1055,13 @@ color: #323232;
 .modal-close::after {
 		transform: rotate(-45deg);
 }
+
+
+
+
+
+
+
 
 .modal-show {
 	display: block;

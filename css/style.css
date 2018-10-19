@@ -695,7 +695,7 @@ text-decoration: none;
 }
 /* карта и адрес*/
 .address{
-	margin-bottom: 35px;
+	margin-bottom: 36px;
 	height: 430px;
 	width: 1200px;
 }
@@ -751,9 +751,6 @@ text-decoration: none;
 }
 
 /*футер*/
-footer {
-	padding-bottom: 30px;
-}
 .footer-wrapper {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -763,6 +760,11 @@ footer {
 
 	padding-left: 16px;
 	padding-right: 20px;
+	padding-bottom: 30px;
+
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .footer-socials {
 	display: -webkit-flex;
@@ -772,18 +774,28 @@ footer {
 	display: flex;
 
 	width: 190px;
+	margin-left: 18px;
 }
-.footer-socials img {
+.footer-socials svg {
 	border-radius: 50%;
 	border: 2px #c2cec7 solid;
 
 	padding: 0;
 	margin-left: 13px;
-
+}
+.social-btn:hover g,
+.social-btn:hover path {
+	fill: #fff;
+}
+.social-btn:active g,
+.social-btn:active path {
+	fill: #e9e9e9;
 }
 
 .footer-company-info {
-	margin-left: 245px;
+	margin-left: 244px;
+	width: 340px;
+
 }
 .footer-company-info ul {
 	display: -webkit-flex;
@@ -793,7 +805,6 @@ footer {
 	display: flex;
 	flex-wrap: wrap;
 
-	width: 330px;
 	margin: 0;
 	padding: 0;
 }
@@ -801,13 +812,22 @@ footer {
 .footer-company-info li {
 	list-style: none;
 	width: 50%;
+	margin-top: -3px;
 }
+.footer-company-info li:nth-child(2),
+.footer-company-info li:nth-child(4) {
+	margin-left: -29px;
+}
+.footer-company-info li:nth-child(3),
+.footer-company-info li:nth-child(4) {
+	margin-top: 3px;
+}
+
 .footer-company-info a {	
 	color: #fff;
 	font-size: 13px;
   	font-weight: 400;
 	line-height: 18px;
-	text-decoration: underline;
 }
 .footer-company-info a:hover,
 .footer-company-info a:focus,
@@ -817,6 +837,7 @@ footer {
 
 .footer-copyright {
 	margin-left: auto;
+	margin-right: 20px;
 
 	font-size: 12px;
   	font-weight: 300;

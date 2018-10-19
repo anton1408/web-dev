@@ -286,7 +286,6 @@ padding-left: 1px;
 	z-index: 0;
 	left: 110px;
 
-	/*opacity: 0;*/
 	display: none;
 }
 .slide-description {
@@ -323,7 +322,6 @@ padding-left: 1px;
 	z-index: 0;
 	top: 0;
 	left: 91px;
-	/*opacity: 0;*/
 	display: none;
 }
 .slide-2>.slide-description {
@@ -337,7 +335,6 @@ padding-left: 1px;
 	z-index: 0;
 	top: 0;
 	left: 92px;
-	/*opacity: 0;*/
 	display: none;
 }
 .slide-3>.slide-description {
@@ -384,7 +381,6 @@ padding-left: 1px;
 #slide1:checked ~ .page-wrapper .slider > .slide-1,
 #slide2:checked ~ .page-wrapper .slider > .slide-2,
 #slide3:checked ~ .page-wrapper .slider > .slide-3 {
-	/*opacity: 1;*/
 	display: block;
 }
 #slide1:checked ~ .page-wrapper {
@@ -547,7 +543,11 @@ padding-left: 1px;
 
 /*инфо про магазин "вафля"*/
 .about-shop {
-	background: url("../img/Мороженко.svg") 20px 94px no-repeat, url("../img/Листик.svg") 20px 182px no-repeat, url("../img/Корова.svg") 593px 94px no-repeat, url("../img/Градусник.svg") 593px 182px no-repeat, url("../img/waffle.jpg");
+	background: url("../img/ice-cream.svg") 20px 93px no-repeat, 
+				url("../img/eco.svg") 20px 181px no-repeat, 
+				url("../img/cow.svg") 585px 93px no-repeat, 
+				url("../img/thermometer.svg") 585px 181px no-repeat, 
+				url("../img/waffle.jpg");
 	height: 306px;
 	width: 1146px;
 
@@ -573,19 +573,26 @@ padding-left: 1px;
 	display: -o-flex;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-}
+/*	justify-content: space-between;
+*/}
 .about-shop p {
 	font-size: 16px;
  	font-weight: 400;
  	line-height: 22px;
 
 	padding: 0;
-	margin: -5px;
- 	padding-left: 80px;
- 	padding-right: 25px;
- 	padding-bottom: 32px;
- 	width: 477px;
+	margin: 0px;
+
+ 	padding-left: 76px;
+ 	padding-bottom: 27px;
+ 	margin-top: -5px;
+ 	/*padding-right: 25px;*/
+ 	/*padding-bottom: 32px;*/
+ 	width: 480px;
+}
+.about-shop p:nth-child(2),
+.about-shop p:nth-child(4) {
+	padding-left: 87px;
 }
 
 /* новости и подписка*/

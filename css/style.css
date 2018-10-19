@@ -178,6 +178,7 @@ header {
 .catalog-mune li:first-child {
 	background-color: #fff;
 }
+
 .user-navigation {
 	margin-left: auto;
 	margin-right: 24px;
@@ -189,6 +190,7 @@ header {
 }
 .user-navigation-item {
 	margin-top: 2px;
+	height: 32px;
 }
 .user-navigation-item a{
 	display: block;

@@ -201,16 +201,39 @@ header {
 	background-color: #f8f7f4;
 	color: #323232;
 }
-.basket-btn a {
+.basket-btn {
 	width: 117px;
 	margin-left: 5px;
+	position: relative;
+}
+.basket-btn a p {
+	position: absolute;
+	top: -6px;
+	left: 45px;
+}
+.basket-btn svg {
+	position: absolute;
+	top: 6px;
+	left: 16px;
 }
 
-.login-btn a{
+.login-btn {
+	position: relative;
 	width: 93px;
 	margin-right: 5px;
 	margin-left: 5px;
 }
+.login-btn a p{
+position: absolute;
+left: 45px;
+top: -6px;
+}
+.login-btn svg {
+	position: absolute;
+	top: 6px;
+	left: 17px;
+}
+
 
 .search-btn a{
 	width: 32px;
@@ -218,6 +241,10 @@ header {
 	border-radius: 50px;
 	text-align: center;
 	margin-right: 5px;
+}
+.search-btn svg {
+padding-top: 7px;
+padding-left: 1px;
 }
 .user-navigation-item:hover path,
 .user-navigation-item:focus path,

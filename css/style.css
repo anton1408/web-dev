@@ -145,6 +145,7 @@ header {
 	color: #323232;
 	margin: 0;
 	padding: 0;
+	z-index: 20;
 }
 .catalog-mune a {
 	margin: 0;
@@ -470,16 +471,21 @@ header {
 
 /**************** catalog *****************/
 .catalog{
+	width: 1200px;
+	margin-bottom: -17px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.catalog-wrapper {
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	flex-wrap: wrap;
 
-	width: 1200px;
-	margin-bottom: -61px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 14px;
+
 }
 .catalog-item {
 	padding-left: 13px;
@@ -488,11 +494,8 @@ header {
 	height: 399px;
 	width: 269px;
 	margin-left: -2px;
+	margin-bottom: -44px;
 	position: relative;
-
-}
-.catalog-item:first-child {
-	margin-left: 14px;
 }
 
 .catalog-item img {
@@ -535,6 +538,7 @@ header {
 	border-radius: 5px;
 	background-color: rgba(255, 255, 255, 0.2);
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+	z-index: 20;
 }
 .catalog-item:hover .catalog-btn {
 	display: block;
@@ -542,6 +546,7 @@ header {
 }
 .inHit {
 	position: absolute;
+	left: 15px;
 }
 
 
@@ -885,8 +890,9 @@ header {
 	display: -o-flex;
 	display: flex;
 	margin-top: -18px;
-	margin-left: 18px;
+	margin-left: -13px;
 	position: relative;
+	z-index: 10;
 
 	font-size: 14px;
 	font-weight: 400;
@@ -981,6 +987,20 @@ header {
 	position: absolute;
 	top: 35px;
 	left: 195px;
+}
+.filter-sorting-wrapper::after {
+	content: "";
+	border-style: solid;
+	border-width: 10px 5px 0 5px;
+	border-color: #fff transparent transparent transparent;
+
+	position: absolute;
+	top: 35px;
+	left: 195px;
+}
+.filter-sorting-wrapper:hover + .filter-sorting-wrapper::after {
+		border-color: #323232 transparent transparent transparent;
+
 }
 #filter-sorting:hover {
 	color: #323232;
@@ -1182,10 +1202,37 @@ header {
 .catalog-page {
 	flex-wrap: wrap;
 }
-
-
-
-
+.catalog-controls {
+	margin-top: 72px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	margin-bottom: 20px;
+}
+.catalog-controls ul {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 40px;
+}
+.catalog-controls ul li {
+	margin-right: 20px;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+}
+.catalog-controls a {
+	color: #fff;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	vertical-align: middle;
+	text-align: center;
+}
 
 
 
